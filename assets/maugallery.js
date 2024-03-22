@@ -153,8 +153,9 @@
           index = i ;
         }
       });
+      // Rajout ci-dessous [index11] au lieu de [index] pour résoudre le problème et passer à l'image précédente dans la modale
       next =
-        imagesCollection[index] ||
+        imagesCollection[index-1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -192,9 +193,11 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      // Rajout ci-dessous [index+1] au lieu de [index] pour résoudre le problème et passer à l'image suivante dans la modale
+      next = imagesCollection[index+1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+    // MODALE ---------------------------------------------------------------------------------------------------------------------------------------
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
@@ -218,6 +221,8 @@
                 </div>
             </div>`);
     },
+    // FIN MODALE -----------------------------------------------------------------------------------------------------------------------------------
+    // NAVIGATION
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
@@ -240,7 +245,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+    // Rajout de "active active-tag" au lieu de "active-tag" ci-dessous : permet de régler le problème de mise en forme du filtre sélectionné
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
