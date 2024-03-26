@@ -197,7 +197,6 @@
       next = imagesCollection[index+1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
-    // MODALE ---------------------------------------------------------------------------------------------------------------------------------------
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
@@ -221,8 +220,6 @@
                 </div>
             </div>`);
     },
-    // FIN MODALE -----------------------------------------------------------------------------------------------------------------------------------
-    // NAVIGATION
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
