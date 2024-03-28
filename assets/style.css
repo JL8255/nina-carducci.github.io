@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 	font-family: 'Spectral-normal-800';
 	src: url('./police/Spectral/Spectral-ExtraBold.ttf') format('truetype');
 	font-weight: 800;
@@ -27,7 +27,7 @@
 	src: url('./police/Spectral/Spectral-LightItalic.ttf') format('truetype');
 	font-weight: 300;
 	font-style: italic;
-}
+}*/
 
 body {
 	max-width: 1920px;
@@ -111,9 +111,9 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral-italic-800';
-	/*font-style: italic;
-	font-weight: 800;*/
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 800;
 	font-size: 16px;
 	line-height: 19px;
 	width: 60%;
@@ -175,25 +175,25 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral-italic-400';
-	/*font-style: italic;
-	font-weight: 400;*/
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 400;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: 'Spectral-italic-300';
-	/*font-style: italic;
-	font-weight: 300;*/
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 300;
 	font-size: 40px;
 	line-height: 48px;
 
 }
 .quote__author {
-	font-family: 'Spectral-normal-800';
-	/*font-style: normal;
-	font-weight: 800;*/
+	font-family: 'Spectral';
+	font-style: normal;
+	font-weight: 800;
 	font-size: 22px;
 }
 
