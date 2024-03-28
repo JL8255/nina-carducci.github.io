@@ -1,3 +1,34 @@
+@font-face {
+	font-family: 'Spectral-normal-800';
+	src: url('./police/Spectral/Spectral-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Spectral-italic-800';
+	src: url('./police/Spectral/Spectral-ExtraBoldItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Spectral-italic-400';
+	src: url('./police/Spectral/Spectral-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Spectral-normal-400';
+	src: url('./police/Spectral/Spectral-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Spectral-italic-300';
+	src: url('./police/Spectral/Spectral-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -51,7 +82,7 @@ body {
 }
 
 .picture.left::before {
-	/*content: ' ';*/
+	content: ' ';
 	background-color: #E5975F;
 	width: 374px;
 	height: 329px;
@@ -80,12 +111,15 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
-	font-weight: 800;
-	font-style: italic;
+	font-family: 'Spectral-italic-800';
+	/*font-style: italic;
+	font-weight: 800;*/
+	font-size: 16px;
+	line-height: 19px;
 	width: 60%;
+	margin-bottom : 8px;
 }
-#about-me p {
+.about-me__inner {
 	width: 80%;
 	font-size: 14px;
 }
@@ -96,6 +130,8 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-family: 'inter';
+	font-size: 28px;
 }
 .gallery .nav {
 	justify-content: center;
@@ -139,23 +175,25 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
-	font-style: italic;
+	font-family: 'Spectral-italic-400';
+	/*font-style: italic;
+	font-weight: 400;*/
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
-	font-style: italic;
-	font-size: 39px;
+	font-family: 'Spectral-italic-300';
+	/*font-style: italic;
+	font-weight: 300;*/
+	font-size: 40px;
 	line-height: 48px;
-	font-weight: 400;
 
 }
 .quote__author {
-	font-family: Spectral;
-	font-weight: 800;
+	font-family: 'Spectral-normal-800';
+	/*font-style: normal;
+	font-weight: 800;*/
 	font-size: 22px;
 }
 
@@ -259,7 +297,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me__inner {
 		width: 100%;
 	}
 }
@@ -357,4 +395,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
